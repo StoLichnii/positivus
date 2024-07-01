@@ -41,6 +41,10 @@
       max-width: 50%;
       height: auto;
     }
+
+    @include mobile {
+      max-width: 165px;
+    }
   }
 
   &__title {
@@ -85,6 +89,12 @@
 
       svg {
         color: var(--serviceCardLinkIconColor);
+      }
+    }
+
+    &-label {
+      @include mobile {
+        @include visually-hidden;
       }
     }
   }
